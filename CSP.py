@@ -3,6 +3,7 @@
 class node:
     def __init__(self, value, index):
         self.value = value
+        self.index=index
         self.row = index // n
         self.column = index % n
         self.deleted = False
