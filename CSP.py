@@ -1,8 +1,9 @@
 import random
+import turtle
 class node:
     def __init__(self, value, index):
         self.value = value
-        self.index=index
+        self.index = index
         self.row = index // n
         self.column = index % n
         self.deleted = False
@@ -25,12 +26,6 @@ def read_file():
             TempNode = node(int(temp[j]),index)
             arr.append(TempNode)
             index += 1
-    '''lane = 0
-    for i in range(n*n):
-        lane+=1
-        print(arr[i].index,"\t",end="")
-        if lane % 9 == 0:
-            print()'''
 ##############################################################################################
 def heuristic():
     for i in range(len(arr)):
@@ -72,8 +67,34 @@ def random_pick():
     random.shuffle(pick_arr)
     return pick_arr[1]
 ##############################################################################################
+def drawHitori():
+    y = n * 20
+    turtle.color("light gray")
+    turtle.speed(0)
+    for i in range (n):
+        x = -n * 20
+        for i in range(n):
+            turtle.penup()
+            turtle.goto(x,y)
+            turtle.pendown()
+            turtle.goto(x+40,y)
+            turtle.goto(x+40,y-40)
+            turtle.goto(x,y-40)
+            turtle.goto(x,y)
+            turtle.penup()
+            x += 40
+        y -= 40
+    for i in range(len(arr)):
+        YPos = (n * 20) - (arr[i].row * 40)
+        XPos = (-n *20) + (arr[i].column * 40)
+        turtle.goto(XPos+20,YPos-40)
+        turtle.color("black")
+        style = ('Courier', 20, 'italic')
+        turtle.write(arr[i].value, font=style, align='center')
+##############################################################################################
 #def CSP():
-    
+        
 ##############################################################################################
 read_file()
 heuristic()
+drawHitori()
