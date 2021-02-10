@@ -7,9 +7,10 @@ class node:
         self.row = index // n
         self.column = index % n
         self.deleted = False
+        self.domain = [True, False]
 def read_file():
     infile = open("sample1.txt","r")
-    global n,start,goals,arr
+    global n,arr
     a = infile.readline()
     a = a.split(" ")
     n = int(len(a))
