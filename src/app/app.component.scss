@@ -1,5 +1,222 @@
-.element{
-    background-color: red;
-    width: 30vw;
-    height: 50vh;
+h1 {
+    text-align: center;
 }
+p {
+    text-align: center;
+    
+
+}
+div {
+    text-align: center;
+    margin: auto;
+
+}
+
+form {
+    text-align: center;
+}
+.container {
+    padding: 10px;
+    width: 100%;
+}
+.ab {
+
+    background-color:#eaeae1
+}
+.address-selector{
+    text-align-last:end;
+    width:15vw;
+    padding: 5px;
+
+    display: inline-block;
+    background: #f1f1f1;
+    border-radius:5px;
+}
+.store-type-selector{
+    text-align-last: start;
+    width: 25vw;
+    height: 5vh; 
+    display: inline-block;
+    background: #f1f1f1;
+    border-radius: 5px;
+    direction: rtl;
+   
+}
+.address-input{
+    width: 30vw;
+    padding: 10px;
+ 
+    display: inline-block;
+    background: #eaeae1;
+    border-radius:5px;
+    text-align-last:center;
+}
+  
+.info-input{
+    width: 30vw;
+    padding: 10px;
+ 
+    display: inline-block;
+    background: #eaeae1;
+    border-radius:5px;
+    text-align-last:center;
+}
+button{
+    text-align-last:center;
+    width: 30vw;
+    padding: 5px;
+
+    display: inline-block;
+    background: #ffbf00;
+    border-radius:5px;
+}
+img{
+    width: 2%;
+    position: relative;
+    top: 6px;
+    
+}
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+   }
+   @font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Vazir-Bold.eot');
+    src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir-Bold.woff2') format('woff2'), 
+    url('fonts/Vazir-Bold.woff') format('woff'), 
+    url('fonts/Vazir-Bold.ttf') format('truetype');
+   }
+   @media only screen and (max-width: 600px){
+    label {
+        text-align: center;
+        margin-left: 15vw;
+    }
+    
+    option{
+        text-align-last:center;
+    }
+    
+    button{
+        text-align-last:center;
+        width: 60vw;
+        padding: 5px;
+    
+        display: inline-block;
+        background: #ffbf00;
+        border-radius:5px;
+    }
+
+    
+    .info-input{
+        width: 60vw;
+        padding: 10px;
+     
+        display: inline-block;
+        background: #eaeae1;
+        border-radius:5px;
+        text-align-last:center;
+    }
+    
+    .address-input{
+        width: 60vw;
+        padding: 10px;
+     
+        display: inline-block;
+        background: #eaeae1;
+        border-radius:5px;
+        text-align-last:center;
+    }
+    
+    .store-type-selector{
+        text-align-last: start;
+        width: 34.5vw;
+        height: 5vh; 
+        display: inline-block;
+        background: #f1f1f1;
+        border-radius: 5px;
+        direction: rtl;
+       
+    }
+    
+    .address-selector{
+        text-align-last:end;
+        width:30.5vw;
+        padding: 5px;
+    
+        display: inline-block;
+        background: #f1f1f1;
+        border-radius:5px;
+    }
+    img{
+        width: 4%;
+        position: relative;
+        top: 5px;
+        
+    }
+   }
+   @media only screen and (min-width: 992px) 
+   {
+    .address-selector{
+        text-align-last:end;
+        width:15vw;
+        padding: 5px;
+    
+        display: inline-block;
+        background: #f1f1f1;
+        border-radius:5px;
+    }
+    .store-type-selector{
+        text-align-last: start;
+        width: 25vw;
+        height: 5vh; 
+        display: inline-block;
+        background: #f1f1f1;
+        border-radius: 5px;
+        direction: rtl;
+       
+    }
+    .address-input{
+        width: 30vw;
+        padding: 10px;
+     
+        display: inline-block;
+        background: #eaeae1;
+        border-radius:5px;
+        text-align-last:center;
+    }
+      
+    .info-input{
+        width: 30vw;
+        padding: 10px;
+     
+        display: inline-block;
+        background: #eaeae1;
+        border-radius:5px;
+        text-align-last:center;
+    }
+    button{
+        text-align-last:center;
+        width: 30vw;
+        padding: 5px;
+    
+        display: inline-block;
+        background: #ffbf00;
+        border-radius:5px;
+    }
+    img{
+        width: 2%;
+        position: relative;
+        top: 6px;
+        
+    }
+   }

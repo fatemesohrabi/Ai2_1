@@ -1,97 +1,89 @@
-<style>
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-    }
-    div {
-        text-align: center;
-        margin: auto;
 
-    }
-    form {
-        text-align: center;
-    }
-    label {
-        text-align: center;
-    }
-    select{
-        text-align-last:center;
-        width: 5%;
-        padding: 5px;
-  
-        display: inline-block;
-        background: #f1f1f1;
-        border-radius:5px;
-    }
-    option{
-        text-align-last:center;
-    }
-    input[type=text]
-    {
-        width: 13%;
-        padding: 10px;
-     
-        display: inline-block;
-        background: #eaeae1
-;
-        border-radius:5px;
-        text-align-last:center;
-    }
-    textarea
-    {
-        width: 13%;
-        padding: 10px;
-     
-        display: inline-block;
-        background: #eaeae1
-;
-        border-radius:5px;
-        text-align-last:center;
-    }
-    
-    button{
-        text-align-last:center;
-        width: 13%;
-        padding: 5px;
-  
-        display: inline-block;
-        background: #ffbf00;
-        border-radius:5px;
-    }
-    .container {
-        padding: 10px;
-        width: 100%;
-   }
+<div class="ab" > 
 
-</style>
+
 <img src="http://noyantech.ir/wp-content/uploads/2016/03/Logo_OPAL_FA-1-300x124.png" alt="Logo_OPAL_FA-1-300x124" style="width:150px;height:60px;float: right;">
 
 
 <form>
     <div class="container">
-    <br><br><p>.دوست عزیز جهت فعالسازی فروشگاهتان در اوپال اطلاعات زیر را تکمیل کنید</p>
-    <select id="types">
+
+    <br>
+    <br>
+
+    <p style="font-size: 15px;">.دوست عزیز جهت فعالسازی فروشگاهتان در اوپال اطلاعات زیر را تکمیل کنید</p>
+
+    <select class="store-type-selector" id="types">
         <option style="text-align:center" value="A">بوتیک</option>
         <option value="B">بوتیک2</option>
         <option value="C">بوتیک3</option>
       </select>
-      <label for="types" style="text-align:center">:نوع کسب</label>
-    <br><br><input type="text" name="store_name" placeholder="نام فروشگاه">
-    <br><br><input type="text" name="store_telephone" placeholder="شماره تماس فروشگاه">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://github.com/KayvanMazaheri/ir-city-select/releases/download/v0.2.0/ir-city-select.min.js"></script>
-    <br><br>
-    <div class="ir-select">
-        <select class="ir-city"></select>
-        <select class="ir-province"></select>
-      </div>
-    <br><textarea name="address" placeholder="آدرس فروشگاه" cols="40" rows="4"></textarea>  
+
+      <label for="types" style="text-align:center"> نوع کسب </label>
+
     <br>
-    <input type="checkbox" id="agree" name="agree">
-    <label for="agree"> .با قوانین اوپال موافقم</label><br>
-    <br><button type="button">ارسال</button>
-    </div>
+    <br>
     
-</form>    
+    <input class="info-input" name="store_name" placeholder="نام فروشگاه"/>
+
+    <br>
+    <br>
+    
+    <input class="info-input" name="store_telephone" placeholder="شماره تماس فروشگاه">
+
+    <br>
+    <br>
+
+    <div class="ir-select">
+        <select class="ir-city address-selector"></select>
+        <select class="ir-province address-selector" style=" margin-left: 15px;" ></select>
+    </div>
+
+    <br>
+    <textarea 
+    class="address-input"
+    name="address" 
+    placeholder="آدرس فروشگاه" 
+    cols="40" 
+    rows="3"
+    >
+
+    </textarea>   
+
+    <br>
+
+    <label for="agree"> .با قوانین اوپال موافقم</label>
+
+    <input type="checkbox" id="agree" name="agree">
+
+    <br>
+    <br>
+
+    <button type="button">ارسال</button>
+
+    <br>
+      <p 
+      style="font-size: 10px;
+      ">
+        <img 
+        src="https://www.pinclipart.com/picdir/big/544-5446132_call-icons-png-transparent-call-icon-png-clipart.png" 
+        alt="call_logo" 
+        style="width: 4%;
+        position: relative;
+        top: 5px;"> 
+        پشتیبانی :09398458844
+      </p>
+      
+      <a href="http://opalmoda.ir/" style="font-size: 10px; text-decoration: none; color:black">
+        <img src="https://i.pinimg.com/originals/fd/b0/13/fdb01354a7f787c8d3191c8759c7d428.png" 
+        alt="call_logo" 
+        style="width: 4%;
+        position: relative;
+        top: 5px;
+        "> 
+        opalmoda.ir
+      </a>
+    </div> 
+</form>   
+
+</div>   

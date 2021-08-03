@@ -101,7 +101,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/ir-city-select.js",
+              "src/assets/js/ir-city-select.min.js",
+              "src/assets/js/jquery-3.6.0.min.js"
+
+            ]
           }
         }
       }
